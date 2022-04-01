@@ -1,0 +1,116 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+
+  // отключить в случае необходимости
+  // outline: 1px solid red;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: $main-bgc;
+  color: $main-text-color;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: $main-font-weight;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+
+  &.scroll-lock {
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-color: $registration-form-background;
+    font-size: $main-font-size-desktop;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-family: $second-text-color;
+  font-size: 24px;
+  line-height: $main-section-title-line-height;
+  text-align: center;
+  font-weight: inherit;
+  color: $main-text-color;
+
+  &--left {
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: $desktop-section-title-line-height;
+  }
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+
+  @media screen and (min-width: 768px) {
+    width: 664px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 852px;
+  }
+}
+
+a {
+  cursor: pointer;
+}

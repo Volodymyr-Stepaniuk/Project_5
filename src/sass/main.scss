@@ -1,12 +1,9 @@
 
 @import './utils/common';
 @import './utils/variables';
-=======
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+
+/*main style*/
 
 // Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
-@import './gallery';
+@import './component/gallery';

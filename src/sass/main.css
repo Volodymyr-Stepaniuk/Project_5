@@ -1,36 +1,119 @@
 @charset "UTF-8";
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
- 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
+/*fonts variables*/
+/* Основной шрифт */
+/* Шрифт заголовков */
+/*color variables*/
+/* Основной цвет текста */
+/* Вторичный цвет текста */
+/* Третий цвет текстка */
+/* Цвет акцента */
+/* Основной цвет заголовков */
+/* Вторичный цвет заголовков*/
+/*Основной цвет кнопок */
+/* Вторичный цвет кнопок */
+/* Основной цвет фона */
+/* Вторичный цвет фона  */
+/*Третий  цвет фона  */
+/* Четвертный цвет фона  */
+/* Пятый цвет фона (отзывы) */
+/* Шестой цвет фона (бордер под отзывами) */
+/*Цвет фона мобильного меню*/
+/* Цвет бордера в моб меню */
+/* Фон первого продукта */
+/* Фон второго продукта */
+/* Фон третьего продукта */
+/*animation variables */
+/*main style*/
+/*fonts variables*/
+/* Основной шрифт */
+/* Шрифт заголовков */
+/*color variables*/
+/* Основной цвет текста */
+/* Вторичный цвет текста */
+/* Третий цвет текстка */
+/* Цвет акцента */
+/* Основной цвет заголовков */
+/* Вторичный цвет заголовков*/
+/*Основной цвет кнопок */
+/* Вторичный цвет кнопок */
+/* Основной цвет фона */
+/* Вторичный цвет фона  */
+/*Третий  цвет фона  */
+/* Четвертный цвет фона  */
+/* Пятый цвет фона (отзывы) */
+/* Шестой цвет фона (бордер под отзывами) */
+/*Цвет фона мобильного меню*/
+/* Цвет бордера в моб меню */
+/* Фон первого продукта */
+/* Фон второго продукта */
+/* Фон третьего продукта */
+/*animation variables */
+.gallery {
+  max-width: 320px;
+  height: 122px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff5f6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery1x_mobile.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery1x_mobile.jpg");
+  background-repeat: no-repeat;
 }
 
-h2 {
-  color: red;
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .gallery .gallery {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery2x_mobile.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery2x_mobile.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    max-width: 768px;
+    height: 264px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery1x_tablet.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery1x_tablet.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery .gallery {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery2x_tablet.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery2x_tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery {
+    max-width: 1280px;
+    height: 430px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery1x_desktop.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery1x_desktop.jpg");
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .gallery .gallery {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery2x_desktop.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery2x_desktop.jpg");
+  }
 }
 /*# sourceMappingURL=main.css.map */

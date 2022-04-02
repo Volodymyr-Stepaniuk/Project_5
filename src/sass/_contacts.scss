@@ -3,6 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+@media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 32px;
+}
 }
 .wrapper {
 margin:0;
@@ -21,7 +27,10 @@ height: 412px;
 border-radius: 24px;
 background-color: $four-bgc;
 box-shadow: $contacts-box-shadow;
-}
+@media screen and (min-width: 768px) {
+    width: 224px;
+    height: 528px;
+}}
 .contacts-item{
 padding:40px 32px;
 
@@ -135,5 +144,7 @@ padding:40px 32px;
     }
 }
 .btn-block {
-margin-left: 58px;
+    display: flex;
+flex-direction: column;
+align-items: center;
 }

@@ -101,14 +101,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
-
-  @media screen and (min-width: 768px) {
-    width: 664px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 852px;
-  }
 }
 
 a {

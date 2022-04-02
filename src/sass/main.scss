@@ -1,6 +1,4 @@
 
-@import './utils/common';
-@import './utils/variables';
 =======
 /*
  * Главный файл стилей.
@@ -10,3 +8,5 @@
 // Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
 @import './gallery';
+@import './utils/base';
+

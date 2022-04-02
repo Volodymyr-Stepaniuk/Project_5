@@ -27,25 +27,6 @@ p {
   margin: 0;
 }
 
-body {
-  margin: 0;
-  background-color: $main-bgc;
-  color: $main-text-color;
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: $main-font-weight;
-  font-size: $main-font-size;
-  line-height: $main-line-height;
-
-  &.scroll-lock {
-    overflow: hidden;
-  }
-
-  @media screen and (min-width: 1280px) {
-    background-color: $registration-form-background;
-    font-size: $main-font-size-desktop;
-  }
-}
 
 .visually-hidden {
   position: absolute;
@@ -73,16 +54,6 @@ body {
   text-align: center;
   font-weight: inherit;
   color: $main-text-color;
-
-  &--left {
-    @media screen and (min-width: 768px) {
-      text-align: start;
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: 36px;
-    line-height: $desktop-section-title-line-height;
-  }
 }
 
 .list {
@@ -102,9 +73,21 @@ body {
   margin-right: auto;
   min-width: 320px;
 }
-
-a {
+@mixin list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+@mixin link {
+  text-decoration: none;
+  display: block;
+}
+@mixin btn {
   cursor: pointer;
+  border: none;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin list {

@@ -1,0 +1,220 @@
+@charset "UTF-8";
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*fonts variables*/
+/* Основной шрифт */
+/* Шрифт заголовков */
+/*color variables*/
+/* Основной цвет текста */
+/* Вторичный цвет текста */
+/* Третий цвет текстка */
+/* Цвет акцента */
+/* Основной цвет заголовков */
+/* Вторичный цвет заголовков*/
+/*Основной цвет кнопок */
+/* Вторичный цвет кнопок */
+/* Основной цвет фона */
+/* Вторичный цвет фона  */
+/*Третий  цвет фона  */
+/* Четвертный цвет фона  */
+/* Пятый цвет фона (отзывы) */
+/* Шестой цвет фона (бордер под отзывами) */
+/*Цвет фона мобильного меню*/
+/* Цвет бордера в моб меню */
+/* Фон первого продукта */
+/* Фон второго продукта */
+/* Фон третьего продукта */
+/*animation variables */
+/*main style*/
+/*fonts variables*/
+/* Основной шрифт */
+/* Шрифт заголовков */
+/*color variables*/
+/* Основной цвет текста */
+/* Вторичный цвет текста */
+/* Третий цвет текстка */
+/* Цвет акцента */
+/* Основной цвет заголовков */
+/* Вторичный цвет заголовков*/
+/*Основной цвет кнопок */
+/* Вторичный цвет кнопок */
+/* Основной цвет фона */
+/* Вторичный цвет фона  */
+/*Третий  цвет фона  */
+/* Четвертный цвет фона  */
+/* Пятый цвет фона (отзывы) */
+/* Шестой цвет фона (бордер под отзывами) */
+/*Цвет фона мобильного меню*/
+/* Цвет бордера в моб меню */
+/* Фон первого продукта */
+/* Фон второго продукта */
+/* Фон третьего продукта */
+/*animation variables */
+.gallery {
+  max-width: 320px;
+  height: 122px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(255, 245, 246);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery1x_mobile.jpg");
+  background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .gallery .gallery {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery2x_mobile.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    max-width: 768px;
+    height: 264px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery1x_tablet.jpg");
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery .gallery {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery2x_tablet.jpg");
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery {
+    max-width: 1280px;
+    height: 430px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery1x_desktop.jpg");
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .gallery .gallery {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery2x_desktop.jpg");
+  }
+}
+
+.advantages-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #FFF5F6;
+  padding-bottom: 82px;
+  padding-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-container {
+    display: flex;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    margin: -15px;
+  }
+}
+
+.advantages-item {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
+
+.advantages-number {
+  font-family: "Titan One";
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-number {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages-number {
+    font-size: 58px;
+  }
+}
+
+.advantages-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 230px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .advantages-text {
+    font-size: 14px;
+    line-height: 1.74;
+    max-width: 180px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages-text {
+    font-size: 16px;
+    line-height: 1.76;
+    max-width: 288px;
+  }
+}
+
+.advantages-label-3::before, .advantages-label-2::before, .advantages-label-1::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  height: 50px;
+}
+
+.advantages-label-1::before {
+  width: 33px;
+  background-image: url(../images/ice-cream-1.png);
+}
+
+.advantages-label-2::before {
+  width: 50px;
+  background-image: url(../images/ice-apple-1.png);
+}
+
+.advantages-label-3::before {
+  width: 44px;
+  background-image: url(../images/ice-heart-1.png);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages-label-1::before {
+    background-image: url(../images/ice-cream-2.png);
+  }
+
+  .advantages-label-2::before {
+    background-image: url(../images/ice-apple-2.png);
+  }
+
+  .advantages-label-3::before {
+    background-image: url(../images/ice-heart-2.png);
+  }
+}/*# sourceMappingURL=main.css.map */

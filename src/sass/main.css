@@ -148,40 +148,6 @@ p {
   }
 }
 
-.list {
-  list-style: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.container {
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-@media screen and (min-width: 905px) {
-  .container {
-    width: 905px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
-}
-
 .advantages-container {
   padding-left: 15px;
   padding-right: 15px;
@@ -190,7 +156,7 @@ p {
   padding-top: 40px;
 }
 
-@media screen and (min-width: 905px) {
+@media screen and (min-width: 768px) {
   .advantages-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -205,7 +171,7 @@ p {
   margin-bottom: 32px;
 }
 
-@media screen and (min-width: 905px) {
+@media screen and (min-width: 768px) {
   .advantages-item {
     width: calc((100% - 6 * 15px) / 3);
     margin: 15px;
@@ -213,16 +179,16 @@ p {
 }
 
 .advantages-number {
-  font-family: 'Titan One';
+  font-family: "Titan One", cursive;
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #D41443;
+  color: #d41443;
   margin-bottom: 16px;
 }
 
-@media screen and (min-width: 905px) {
+@media screen and (min-width: 768px) {
   .advantages-number {
     font-size: 48px;
   }
@@ -238,7 +204,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   max-width: 230px;
-  font-family: 'DM Sans';
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -246,7 +212,7 @@ p {
   color: #000000;
 }
 
-@media screen and (min-width: 905px) {
+@media screen and (min-width: 768px) {
   .advantages-text {
     font-size: 14px;
     line-height: 1.74;
@@ -276,28 +242,28 @@ p {
 
 .advantages-label-1::before {
   width: 33px;
-  background-image: url(../images/ice-cream-1.png);
+  background-image: url(../../images/proj5/mobile/icon1-mob.png);
 }
 
 .advantages-label-2::before {
   width: 50px;
-  background-image: url(../images/ice-apple-1.png);
+  background-image: url(../../images/proj5/mobile/icon2-mob.png);
 }
 
 .advantages-label-3::before {
   width: 44px;
-  background-image: url(../images/ice-heart-1.png);
+  background-image: url(../../images/proj5/mobile/icon3-mob.png);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages-label-1::before {
-    background-image: url(../images/ice-cream-2.png);
+    background-image: url(../../images/proj5/mobile/icon1-2.png);
   }
   .advantages-label-2::before {
-    background-image: url(../images/ice-apple-2.png);
+    background-image: url(../../images/proj5/mobile/icon2-2.png);
   }
   .advantages-label-3::before {
-    background-image: url(../images/ice-heart-2.png);
+    background-image: url(../../images/proj5/mobile/icon3-2.png);
   }
 }
 /*# sourceMappingURL=main.css.map */

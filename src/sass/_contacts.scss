@@ -1,4 +1,6 @@
-
+.contacts {
+    padding:80px 0px 60px 0px;
+}
 .contacts-list {
     display: flex;
     flex-direction: column;
@@ -6,8 +8,8 @@
 @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 40px;
     column-gap: 32px;
+    margin-bottom: 40px;
 }
 }
 .wrapper {
@@ -21,7 +23,15 @@ padding: 0;
 &:last-child {
     margin-bottom: 32px;
 }
-
+@media screen and (min-width: 768px) {
+    &:not(:last-child) {
+        margin-bottom: 0px;
+    }
+    
+    &:last-child {
+        margin-bottom: 0px;}
+    margin-bottom: 40px;
+}
 width: 280px;
 height: 412px;
 border-radius: 24px;
@@ -30,7 +40,8 @@ box-shadow: $contacts-box-shadow;
 @media screen and (min-width: 768px) {
     width: 224px;
     height: 528px;
-}}
+}
+}
 .contacts-item{
 padding:40px 32px;
 
@@ -75,7 +86,9 @@ padding:40px 32px;
         height: 1px;
         background-color: $six-bgc;
         margin-top: 24px;
-        }}
+        @media screen and (min-width: 768px) {
+            width:160px;
+        }}}
 
     .contacts-item {
     &__workday {
@@ -142,9 +155,17 @@ padding:40px 32px;
     &:last-child {
         margin-top: 10px;
     }
-}
+    @media screen and (min-width: 768px) {
+        width: 191px;
+        margin-right: 14.5px;
+        &:last-child {
+            margin-top: 0px;
+}}}
 .btn-block {
     display: flex;
 flex-direction: column;
 align-items: center;
-}
+@media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content:center;
+}}

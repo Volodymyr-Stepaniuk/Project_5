@@ -1,19 +1,4 @@
-<<<<<<< Updated upstream
-/* Главный файл стилей.
-=======
-/*
- * Главный файл стилей.
->>>>>>> Stashed changes
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
-@import './layout/advantages';
 @import './utils/variables';
-<<<<<<< Updated upstream
-@import './layout/gallery';
-@import './utils/base';
-=======
 @import './utils/base';
 @import './layout/gallery';
->>>>>>> Stashed changes
+@import './layout/advantages';

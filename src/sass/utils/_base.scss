@@ -114,3 +114,20 @@ body {
 a {
   cursor: pointer;
 }
+
+@mixin list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+@mixin link {
+  text-decoration: none;
+  display: block;
+}
+@mixin btn {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}

@@ -66,42 +66,71 @@
 /* Фон второго продукта */
 /* Фон третьего продукта */
 /*animation variables */
+.product__item {
+  border-radius: 24px;
+  width: 100%;
+  height: 489px;
+}
+
+.product__item--one {
+  background-color: #ffb8ca;
+}
+
+.product__item--two {
+  background-color: #f0d1a5;
+}
+
+.product__item--tree {
+  background-color: #c2e297;
+}
+
 .gallery {
   max-width: 320px;
   height: 122px;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(255, 245, 246);
+  background-color: #fff5f6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery1x_mobile.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery1x_mobile.jpg");
   background-repeat: no-repeat;
 }
+
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .gallery .gallery {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery2x_mobile.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery2x_mobile.jpg");
   }
 }
+
 @media screen and (min-width: 768px) {
   .gallery {
     max-width: 768px;
     height: 264px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery1x_tablet.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery1x_tablet.jpg");
     background-repeat: no-repeat;
   }
 }
+
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .gallery .gallery {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery2x_tablet.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery2x_tablet.jpg");
   }
 }
+
 @media screen and (min-width: 1280px) {
   .gallery {
     max-width: 1280px;
     height: 430px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery1x_desktop.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery1x_desktop.jpg");
   }
 }
+
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .gallery .gallery {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Gallery2x_desktop.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Gallery2x_desktop.jpg");
   }
 }
@@ -113,8 +142,11 @@
   padding-bottom: 82px;
   padding-top: 40px;
 }
+
 @media screen and (min-width: 768px) {
   .advantages-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-bottom: 80px;
     padding-top: 80px;
@@ -125,15 +157,16 @@
 .advantages-item {
   margin-bottom: 32px;
 }
+
 @media screen and (min-width: 768px) {
   .advantages-item {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 6 * 15px) / 3);
     margin: 15px;
   }
 }
 
 .advantages-number {
-  font-family: "Titan One";
+  font-family: 'Titan One';
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
@@ -141,11 +174,13 @@
   color: #D41443;
   margin-bottom: 16px;
 }
+
 @media screen and (min-width: 768px) {
   .advantages-number {
     font-size: 48px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .advantages-number {
     font-size: 58px;
@@ -156,13 +191,14 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 230px;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
   color: #000000;
 }
+
 @media screen and (min-width: 768px) {
   .advantages-text {
     font-size: 14px;
@@ -170,6 +206,7 @@
     max-width: 180px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .advantages-text {
     font-size: 16px;
@@ -178,7 +215,7 @@
   }
 }
 
-.advantages-label-3::before, .advantages-label-2::before, .advantages-label-1::before {
+.advantages-label-1::before, .advantages-label-2::before, .advantages-label-3::before {
   content: "";
   display: block;
   background-repeat: no-repeat;
@@ -192,29 +229,28 @@
 
 .advantages-label-1::before {
   width: 33px;
-  background-image: url(../images/ice-cream-1.png);
+  background-image: url(../images/icon1.png);
 }
 
 .advantages-label-2::before {
   width: 50px;
-  background-image: url(../images/ice-apple-1.png);
+  background-image: url(../images/icon2.png);
 }
 
 .advantages-label-3::before {
   width: 44px;
-  background-image: url(../images/ice-heart-1.png);
+  background-image: url(../images/icon3.png);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages-label-1::before {
-    background-image: url(../images/ice-cream-2.png);
+    background-image: url(../images/icon1-2.png);
   }
-
   .advantages-label-2::before {
-    background-image: url(../images/ice-apple-2.png);
+    background-image: url(../images/icon2-2.png);
   }
-
   .advantages-label-3::before {
-    background-image: url(../images/ice-heart-2.png);
+    background-image: url(../images/icon3-2.png);
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

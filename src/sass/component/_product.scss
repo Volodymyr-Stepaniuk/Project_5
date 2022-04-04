@@ -1,5 +1,7 @@
 .product {
     background-color: $four-bgc;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 .product__discription {
     font-family: 'Titan One';
@@ -55,7 +57,22 @@
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 70px;
+    &::before {
+        content: "";
+        background-image: url(../images/home-pic1-1x.png);
+        width: 280px;
+        height: 280px;
+        background-size: contain;
+    }
+    //&::after {
+        //content: "";
+        //background-image: url(../images/symbol-defs-product.svg#icon-circls);
+        //width: 26px;
+        //height: 6px;
+        //background-size: contain;
+    //}
 }
+
 .product__text {
     font-family: 'DM Sans';
     font-style: bold;
@@ -68,7 +85,9 @@
 .product__button {
     width: 40px;
     height: 40px;
-    border-radius: 5px;
-    color: $four-bgc;
+    border-radius: 50%;
+    color: #ffffff;
+    outline: none;
+    margin-top: 32px;
     opacity: 100%;
 }
